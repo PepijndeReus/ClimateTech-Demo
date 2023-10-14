@@ -1,6 +1,6 @@
 k_values: [3, 10, 27]
-iterations: 10
-input_file: "../Data/Adult/Adult_train.csv"
+iterations: 5
+input_file: "./Adult/Adult_train.csv"
 class_name: "k_anonymity"
 type: "general"
 method: "Generalization and Suppression"
