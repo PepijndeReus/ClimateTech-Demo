@@ -1,5 +1,5 @@
 k_values: [3, 10, 27]
-iterations: 5
+iterations: 1
 input_file: "./Adult/Adult_train.csv"
 class_name: "k_anonymity"
 type: "general"
