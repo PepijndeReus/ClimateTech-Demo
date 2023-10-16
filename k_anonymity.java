@@ -58,12 +58,12 @@ public class k_anonymity {
 		config.addPrivacyModel(new KAnonymity(k));
 		config.setSuppressionLimit(suppression);
 
-		// Save files of the anyonymisation
+		// Save files of the anonymisation
 		ARXResult result = anonymizer.anonymize(data, config);
-		File f = new File("./Adult/" + type + "_" + k + ".csv");
+		File f = new File("../Adult/" + type + "_" + k + ".csv");
 		
 		if(!f.exists() && !f.isDirectory()) { 
-			result.getOutput(false).save("./Adult/" + type + "_" + k + ".csv");
+			result.getOutput(false).save("../Adult/" + type + "_" + k + ".csv");
 		}
 		
 	}

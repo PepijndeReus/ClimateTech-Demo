@@ -1,6 +1,6 @@
 k_values: [3, 10, 27]
 iterations: 1
-input_file: "./Adult/Adult_train.csv"
+input_file: "Adult/Adult_train.csv"
 class_name: "k_anonymity"
 type: "general"
 method: "Generalization and Suppression"
@@ -10,17 +10,17 @@ eps_dram: .2
 
 # columns used
 hierarchy:
-  age: "hierarchy/age.csv"
-  type_employer: "hierarchy/type_employer.csv"
-  education: "hierarchy/education.csv"
-  marital: "hierarchy/marital.csv"
-  occupation: "hierarchy/occupation.csv"
-  relationship: "hierarchy/relationship.csv"
-  race: "hierarchy/race.csv"
-  sex: "hierarchy/sex.csv"
-  capital_gain: "hierarchy/capital_gain.csv"
-  capital_loss: "hierarchy/capital_loss.csv"
-  hr_per_week: "hierarchy/hr_per_week.csv"
-  country: "hierarchy/country.csv"
+  age: "Adult/hierarchy/age.csv"
+  type_employer: "Adult/hierarchy/type_employer.csv"
+  education: "Adult/hierarchy/education.csv"
+  marital: "Adult/hierarchy/marital.csv"
+  occupation: "Adult/hierarchy/occupation.csv"
+  relationship: "Adult/hierarchy/relationship.csv"
+  race: "Adult/hierarchy/race.csv"
+  sex: "Adult/hierarchy/sex.csv"
+  capital_gain: "Adult/hierarchy/capital_gain.csv"
+  capital_loss: "Adult/hierarchy/capital_loss.csv"
+  hr_per_week: "Adult/hierarchy/hr_per_week.csv"
+  country: "Adult/hierarchy/country.csv"
   income: "Insensitive"
 suppression_limit: 0.2
