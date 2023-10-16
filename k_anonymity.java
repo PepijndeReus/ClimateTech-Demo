@@ -31,8 +31,7 @@ public class k_anonymity {
 
 		Data data = Data.create(input_file, StandardCharsets.UTF_8, ',');
 
-		File myobject = new File("hierarchy.txt");
-		// File myobject = new File("hierarchy_" + type + ".txt");
+		File myobject = new File("./hierarchy/hierarchy.txt");
         Scanner myReader = new Scanner(myobject);
         while (myReader.hasNextLine()) {
             String line = myReader.nextLine();
@@ -61,10 +60,10 @@ public class k_anonymity {
 
 		// Save files of the anyonymisation
 		ARXResult result = anonymizer.anonymize(data, config);
-		File f = new File(type + "_" + k + ".csv");
+		File f = new File("./Adult/" + type + "_" + k + ".csv");
 		
 		if(!f.exists() && !f.isDirectory()) { 
-			result.getOutput(false).save(type + "_" + k + ".csv");
+			result.getOutput(false).save("./Adult/" + type + "_" + k + ".csv");
 		}
 		
 	}
