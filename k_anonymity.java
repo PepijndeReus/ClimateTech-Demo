@@ -31,7 +31,7 @@ public class k_anonymity {
 
 		Data data = Data.create(input_file, StandardCharsets.UTF_8, ',');
 
-		File myobject = new File("./hierarchy/hierarchy.txt");
+		File myobject = new File("./Adult/hierarchy/hierarchy.txt");
         Scanner myReader = new Scanner(myobject);
         while (myReader.hasNextLine()) {
             String line = myReader.nextLine();
